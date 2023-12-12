@@ -1,8 +1,10 @@
 import classes from "./App.module.scss";
+import Dashboard from "./pages/dashboard";
+import MyComponent from "./pages/dashboard";
 function App() {
     return (
         <div className={classes.App}>
-            <h1>BlendEdHub</h1>
+            <Dashboard />
         </div>
     );
 }
