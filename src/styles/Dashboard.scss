@@ -1,23 +1,152 @@
 .rootDashboard {
-    width: 1800px;
-    margin: auto;
     // background-color: red;
-
-    border-radius: 20px;
-    background: linear-gradient(
-        242deg,
-        #efefef -0.75%,
-        rgba(74, 153, 163, 0) 113.56%
-    );
-
+    // position: relative;
+    width: 100%;
+    height: 100%;
     display: flex;
 
-    .sidebar {
-        width: 340px;
+    .centerDashboard {
+        padding: 20px;
+        // margin-bottom: 50px;
+
+        width: 1120px;
+        display: flex;
+        flex-direction: column;
+        .header {
+            padding: 0 0 20px 0;
+        }
+
+        .searchContainer {
+            width: 100%;
+            padding: 20px 0 20px 0;
+            height: fit-content;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            // background-color: red;
+
+            .search-bar {
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                width: 40%;
+
+                border-radius: 10px;
+                background: #fffafa;
+
+                &__input {
+                    flex: 1;
+                    border: none;
+                    outline: none;
+                    padding: 5px;
+                    font-size: 16px;
+                    background-color: transparent;
+                }
+
+                &__icon {
+                    margin-left: 5px;
+                    color: #555;
+                    cursor: pointer;
+                }
+            }
+
+            .icons {
+                width: 6%;
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.5rem;
+                color: grey;
+                margin-right: 70px;
+                fill: transparent;
+            }
+        }
+
+        .announcements {
+            width: 100%;
+            height: fit-content;
+            background-color: red;
+
+            padding: 30px;
+
+            border-radius: 10px;
+            background: #fffafa;
+
+            .msgContainer {
+                margin: 10px 0 10px 0;
+                padding: 20px;
+                background-color: #d4deff;
+                border-radius: 20px;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .msg {
+                    text-align: left;
+                    color: #000;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin-left: 40px;
+                }
+
+                .button {
+                    // width: 20%;
+                    background-color: #2525ad;
+                    padding: 10px 40px;
+                    border-radius: 10px;
+                    margin-right: 20px;
+
+                    p {
+                        color: #fff;
+
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .chartsContainer {
+            margin-bottom: 20px;
+            display: flex;
+            width: 100%;
+            height: 50%;
+            justify-content: space-between;
+
+            padding: 0px;
+
+            .leaderboardContainer {
+                width: 49%;
+                margin-top: 20px;
+                height: 100%;
+                border-radius: 10px;
+
+                padding: 20px;
+                background-color: #fff;
+            }
+
+            .progressContainer {
+                width: 49%;
+                height: 100%;
+                margin-top: 20px;
+                border-radius: 10px;
+
+                padding: 20px;
+                background-color: #fff;
+            }
+        }
     }
 
-    .center {
-        width: calc(1800px - 340px - 340px);
-        height: 100vh;
-    }
+    // .right {
+    //     width: 340px;
+    //     height: 100%;
+    //     background-color: yellow;
+
+    //     position: fixed;
+    //     right: 0;
+    // }
 }

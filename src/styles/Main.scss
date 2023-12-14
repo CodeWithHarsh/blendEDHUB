@@ -1,0 +1,24 @@
+.rootMain {
+    width: 1800px;
+    margin: auto;
+    background-color: #d3d3d3;
+    background-image: linear-gradient(315deg, #d3d3d3 0%, #7bed9f 74%);
+
+    border-radius: 0px;
+
+    display: flex;
+
+    position: fixed;
+
+    .sidebar {
+        width: 340px;
+    }
+
+    .center {
+        overflow: scroll;
+        overflow-x: hidden;
+        left: 340px;
+        width: calc(1800px - 340px);
+        height: 100vh;
+    }
+}
